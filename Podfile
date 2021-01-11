@@ -13,7 +13,10 @@ target 'ios-demo' do
   end
 
   target 'ios-demoUITests' do
+    inherit! :search_paths
+    inherit! :complete
     # Pods for testing
+    pod 'Cucumberish'
   end
 
 end
